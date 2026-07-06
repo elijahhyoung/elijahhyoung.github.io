@@ -3,89 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elijah Young – Portfolio</title>
+  <title>Elijah Young | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Top of the page -->
-  <header>
-    <!-- <h1>Elijah Young</h1> -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Elijah Young home">EY</a>
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <!-- About Section -->
-    <section id="about">
-      <h2>Hi! I am Elijah Young.</h2>
-      <div style="display: flex; align-items: flex-start;">
-        <img
-          src="Headshot.jpeg"
-          alt="Headshot of Elijah Young"
-          class="headshot-image"
-          style="margin-right: 20px; max-width: 200px;"
-        />
-
+  <main id="top">
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">MIT portfolio</p>
+        <h1>Elijah Young</h1>
+        <p class="intro">
+          I build at the intersection of mechanical design, manufacturing,
+          robotics, and experimental engineering.
+        </p>
         <p>
-          Hi! I'm Elijah Young, an undergraduate student at the Massachusetts Institute of Technology (MIT) pursuing a Bachelor of Science in Computer Science and Engineering. With a GPA of 4.8/5.0 and coursework in machine learning, algorithms, optimization, and data science, I thrive at the intersection of technical rigor and real-world impact.
-          <br><br>
-          My experiences range from machine learning research at the MIT Energy Initiative to developing quantum-based image processing methods at Arizona State University. I’ve also led hands-on projects like MIT Pokerbots, where I applied strategic modeling and algorithms to competitive gameplay.
-          <br><br>
-          Beyond research, I’ve served as a lab assistant, helping new students navigate programming challenges, and worked in industry as an associate consultant, contributing to database systems and vendor communication. I actively engage in professional development through groups like The CRWN and the MIT Undergraduate Practice Opportunities Program.
-          <br><br>
-          Passionate about building accessible, data-driven solutions, I’m always looking to collaborate on impactful tech and research projects.
+          My work spans robot mechanisms, injection molded products, probability
+          research, and space propulsion hardware. I like projects where careful
+          modeling, hands-on fabrication, and testing all have to meet in the
+          same room.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="assets/elijah-young-resume.pdf" target="_blank" rel="noopener">Open Resume</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <img src="assets/elijah-young-headshot.png" alt="Headshot of Elijah Young" />
+      </figure>
+    </section>
+
+    <section class="section-heading" id="projects" aria-labelledby="projects-title">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="projects-title">Project Portfolio</h2>
+    </section>
+
+    <section class="masonry-grid" aria-label="Project portfolio">
+      <article class="project-card tall">
+        <div class="project-meta">
+          <span>2.007</span>
+          <span>Robotics</span>
+        </div>
+        <h3>Design and Manufacturing I</h3>
+        <p>
+          Designed, fabricated, and iterated on a competition robot, emphasizing
+          mechanism design, rapid prototyping, manufacturing decisions, and
+          reliable performance under real constraints.
+        </p>
+        <div class="video-placeholder" role="img" aria-label="Video placeholder for the 2.007 robot project">
+          <span>Video Ready</span>
+          <p>Robot demo video slot</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span>2.008</span>
+          <span>Manufacturing</span>
+        </div>
+        <h3>Design and Manufacturing II</h3>
+        <p>
+          Developed an injection molded yo-yo, connecting product design,
+          tooling, process planning, and manufacturability into a polished
+          physical outcome.
+        </p>
+      </article>
+
+      <article class="project-card compact">
+        <div class="project-meta">
+          <span>2.671</span>
+          <span>Research</span>
+        </div>
+        <h3>Card Shuffling Probabilities</h3>
+        <p>
+          Wrote a technical paper on the probability and structure of card
+          shuffling, using mathematical reasoning to understand how randomness
+          develops through repeated shuffle operations.
+        </p>
+      </article>
+
+      <article class="project-card wide">
+        <div class="project-meta">
+          <span>MIT Space Propulsion Lab</span>
+          <span>Electric propulsion</span>
+        </div>
+        <h3>Ion Thruster and Test Stand</h3>
+        <p>
+          Built ion thruster hardware and a supporting test stand for propulsion
+          experiments, combining mechanical assembly, instrumentation, and
+          experimental validation.
+        </p>
+        <div class="video-placeholder accent" role="img" aria-label="Video placeholder for the ion thruster project">
+          <span>Video Ready</span>
+          <p>Thruster test video slot</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="resume-section" id="resume">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2>Experience and Coursework</h2>
+        <p>
+          A current PDF resume is available for roles, research opportunities,
+          and project collaborations.
         </p>
       </div>
+      <a class="button primary" href="assets/elijah-young-resume.pdf" target="_blank" rel="noopener">View Resume PDF</a>
     </section>
 
-    <!-- Projects Section -->
-    <section id="work">
-      <h2>Projects & Work</h2>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-content">
-            <h3>Project 1</h3>
-            <p>Project 1 blah blah blah</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>Project 2</h3>
-            <p>Project 2 blah blah blah</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h3>Project 3</h3>
-            <p>Project 3 blah blah blah</p>
-          </div>
-        </div>
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something useful.</h2>
+      <div class="contact-links">
+        <a href="mailto:ehyoung@mit.edu">ehyoung@mit.edu</a>
+        <a href="https://www.linkedin.com/in/elijah-h-young/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/elijahhyoung" target="_blank" rel="noopener">GitHub</a>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:ehyoung@mit.edu">ehyoung@mit.edu</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/elijah-h-young/" target="_blank">linkedin.com/in/elijah-h-young/</a></p>
-      <p>GitHub: <a href="https://github.com/elijahhyoung" target="_blank">@elijahhyoung</a></p>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Elijah Young</p>
+    <p>&copy; 2026 Elijah Young</p>
   </footer>
 </body>
 </html>
