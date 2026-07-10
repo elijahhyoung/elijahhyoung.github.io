@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">EY monogram</title>
+  <rect width="64" height="64" fill="#750014"/>
+  <path d="M14 18h17v6H21v7h9v6h-9v9h11v6H14V18Zm23 0 7 14 7-14h7L47 39v13h-6V39L30 18h7Z" fill="#fff"/>
+</svg>

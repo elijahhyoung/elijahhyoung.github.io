@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Elijah Young engineering portfolio</title>
+  <desc id="desc">Branded Open Graph card for Elijah Young's mechanical engineering portfolio.</desc>
+  <rect width="1200" height="630" fill="#f6f4ef"/>
+  <path d="M0 0h1200v12H0z" fill="#750014"/>
+  <g stroke="#101010" stroke-opacity=".12" stroke-width="1">
+    <path d="M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630"/>
+    <path d="M0 126h1200M0 252h1200M0 378h1200M0 504h1200"/>
+  </g>
+  <rect x="86" y="88" width="124" height="124" fill="#750014"/>
+  <path d="M114 125h36v11h-23v16h20v11h-20v20h25v11h-38v-69Zm52 0 15 30 15-30h15l-24 45v24h-13v-24l-24-45h16Z" fill="#fff"/>
+  <text x="86" y="318" font-family="Arial Narrow, Arial, sans-serif" font-size="92" font-weight="800" fill="#101010">ELIJAH YOUNG</text>
+  <text x="90" y="384" font-family="Consolas, monospace" font-size="28" font-weight="700" fill="#750014">MIT MECHANICAL ENGINEERING</text>
+  <text x="90" y="468" font-family="Arial, sans-serif" font-size="34" fill="#2b2d2f">Designing, building, and testing physical systems.</text>
+  <text x="90" y="524" font-family="Consolas, monospace" font-size="22" fill="#5f6971">robotics / manufacturing / experimental hardware / research</text>
+</svg>
