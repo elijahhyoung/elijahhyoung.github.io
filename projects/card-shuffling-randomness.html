@@ -44,25 +44,25 @@
     </section>
 
     <figure class="case-media placeholder-media">
-      <p>Add <code>assets/projects/card-shuffling/overhead-cv-setup.jpg</code> - preferred ratio 16:10. Show the deck, ArUco markers, and overhead camera setup.</p>
+      <p>A photo of the overhead camera and ArUco marker setup is still on my list to add. The results below came out of that rig.</p>
     </figure>
 
     <section class="case-study" aria-label="Card shuffling case study">
       <article class="case-panel">
         <h2>Challenge</h2>
-        <p>Many card games depend on fair shuffling, but different methods mix at very different rates. The project turned that everyday question into a measurable experiment.</p>
+        <p>"Shuffle the deck" means very different things depending on how you shuffle. This project turned that everyday assumption into something I could actually measure instead of just trust.</p>
       </article>
       <article class="case-panel">
         <h2>Constraints</h2>
         <ul>
-          <li>Track all 52 card positions repeatedly across shuffle counts k = 0 to 7.</li>
-          <li>Compare riffle, overhand, and machine shuffling with consistent metrics.</li>
-          <li>Automate measurement enough to make 210 trials practical.</li>
+          <li>Had to track all 52 card positions, repeatedly, across shuffle counts k = 0 to 7.</li>
+          <li>Riffle, overhand, and machine shuffling needed to be compared on the same metrics.</li>
+          <li>Measurement had to be automated enough to make 210 trials realistic instead of a week of manual counting.</li>
         </ul>
       </article>
       <article class="case-panel">
         <h2>Design Approach</h2>
-        <p>A custom computer vision system used ArUco fiducial markers to identify each card from overhead photos. The resulting deck orders enabled local and global randomness metrics.</p>
+        <p>I built a computer vision pipeline around ArUco fiducial markers so each card could be identified from an overhead photo without me hand-logging deck orders. That gave me clean data to run local and global randomness metrics on.</p>
       </article>
       <article class="case-panel">
         <h2>Metrics</h2>
@@ -74,15 +74,15 @@
       </article>
       <article class="case-panel">
         <h2>Results</h2>
-        <p>From the poster data: riffle and machine shuffles approached the theoretical baseline of two surviving pairs, with APS randomization rates of 1.49 and 1.56 per shuffle. Overhand shuffling mixed more slowly at 0.55 per shuffle. Global TV decay rates were 0.53 for riffle, 0.40 for machine, and 0.23 for overhand.</p>
+        <p>Riffle and machine shuffles both closed in on the theoretical baseline fast, with Adjacent-Pair Survival randomization rates of 1.49 and 1.56 per shuffle. Overhand shuffling was the clear laggard at 0.55 per shuffle. Global TV decay told the same story: 0.53 for riffle, 0.40 for machine, 0.23 for overhand.</p>
       </article>
       <article class="case-panel">
         <h2>Conclusion</h2>
-        <p>The poster concludes that riffle-style shuffles randomize far faster than overhand shuffles and that computer vision with ArUco tracking enabled automated local and global measurement across the trial set.</p>
+        <p>Riffle shuffles randomize a deck far faster than overhand ones, and it turns out you can measure that difference precisely with an overhead camera and some markers instead of just taking it on faith.</p>
       </article>
       <article class="case-panel">
         <h2>Improve Next</h2>
-        <p>Add representative plots from the paper or poster as exported images, plus a short note on lighting, camera calibration, and any CV failure modes.</p>
+        <p>I still want to pull the actual plots from the paper and poster into this page instead of just summarizing them, along with a note on lighting and calibration issues that came up during CV setup.</p>
       </article>
       <article class="case-panel">
         <h2>Related Work</h2>
