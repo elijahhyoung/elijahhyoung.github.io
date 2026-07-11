@@ -387,9 +387,9 @@ h3 {
 
 .portrait-frame img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1482 / 1620;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center top;
   filter: saturate(0.9) contrast(1.02);
 }
 
