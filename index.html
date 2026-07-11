@@ -66,6 +66,7 @@
           <p class="eyebrow">MIT Mechanical Engineering · Class of 2027</p>
           <h1 id="hero-title">I build things, then find out if they actually work.</h1>
           <p class="hero-statement">Right now that means equipment engineering at a semiconductor fab in Phoenix, plus MIT coursework and research in robotics, manufacturing, and propulsion. I like projects where the CAD has to survive contact with a shop, a test stand, or a field of competitors trying to break it.</p>
+          <p class="hero-note">Whether you're a recruiter, a fellow engineer, or someone who found this from a QR code on a robot — welcome. Everything below is real work, not filler.</p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#work">Explore selected work</a>
             <a class="button button-secondary" href="assets/resume/elijah-young-resume.pdf" target="_blank" rel="noopener">View resume</a>
@@ -92,6 +93,31 @@
       </div>
     </section>
 
+    <section class="section personality-section" aria-labelledby="personality-title" data-section>
+      <div class="section-kicker reveal">
+        <p class="eyebrow">Off the resume</p>
+        <h2 id="personality-title">Strengths and weaknesses, honestly.</h2>
+      </div>
+      <div class="personality-grid reveal">
+        <article class="personality-card">
+          <h3>Strengths</h3>
+          <ul>
+            <li>Actually enjoys the machine shop more than the design review.</li>
+            <li>Will re-cut a part five times before admitting the first version was fine.</li>
+            <li>Shows up to lab at odd hours when something's finally working.</li>
+          </ul>
+        </article>
+        <article class="personality-card">
+          <h3>Weaknesses</h3>
+          <ul>
+            <li>Will re-cut a part five times before admitting the first version was fine.</li>
+            <li>Still not over losing a match to a robot held together with zip ties.</li>
+            <li>Reads datasheets for fun, which is not a great party trick.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section class="section work-section" id="work" aria-labelledby="work-title" data-section>
       <div class="section-kicker reveal">
         <p class="eyebrow">Selected work</p>
@@ -105,6 +131,7 @@
             <p>Action photos from competition day are still coming. Check the case study for the write-up in the meantime.</p>
           </div>
           <div class="project-body">
+            <div class="project-tags"><span class="tag">Robotics</span></div>
             <p class="project-category">Robotics · MIT 2.007</p>
             <h3>Competition Robot</h3>
             <p class="project-hook">Built for MIT's 2.007 robot design competition, where a good idea on paper still has to survive machining tolerances, assembly reality, and a field of over 150 people trying to beat it.</p>
@@ -123,6 +150,7 @@
             <img src="assets/projects/yoyo/team-eye-product-01.jpg" width="2000" height="1175" loading="lazy" alt="Gold injection-molded yo-yo product photographed on a white background." />
           </div>
           <div class="project-body">
+            <div class="project-tags"><span class="tag">Manufacturing</span></div>
             <p class="project-category">Manufacturing · MIT 2.008</p>
             <h3>Injection-Molded Yo-Yo</h3>
             <p class="project-hook">Designed and tooled a real injection-molded product for MIT's 2.008 manufacturing class, the class where a part either comes out of the mold looking right or it doesn't, and shrinkage doesn't care about your CAD tolerances.</p>
@@ -144,6 +172,7 @@
             <span>TV</span>
             <span>210 trials</span>
           </div>
+          <div class="project-tags"><span class="tag">Research</span></div>
           <p class="project-category">Research · MIT 2.671</p>
           <h3>Card Shuffling Randomness Research</h3>
           <p>Built a computer-vision rig with ArUco markers to actually measure how fast riffle, overhand, and machine shuffling randomize a deck, over 210 trials.</p>
@@ -158,6 +187,7 @@
           <div class="card-media">
             <img src="assets/projects/ion-thruster/final-assembly.png" width="261" height="259" loading="lazy" alt="Assembled ion thruster hardware mounted on a test plate." />
           </div>
+          <div class="project-tags"><span class="tag">Propulsion</span></div>
           <p class="project-category">Electric propulsion · MIT 16.522</p>
           <h3>Ion Thruster and Test Stand</h3>
           <p>Machined and assembled ion thruster hardware for 16.522, then got it running long enough to see plasma on camera.</p>
@@ -177,21 +207,25 @@
       </div>
       <div class="timeline reveal">
         <article>
+          <div class="timeline-mark" aria-hidden="true">TS</div>
           <span>Jun 2026 – Present</span>
           <h3>TSMC · Equipment Engineering Intern, Phoenix</h3>
           <p>Supporting Ion Implant and Laser Spike Annealing tools in a high-volume semiconductor fab. Cut recurring equipment alarms by 15% through root-cause analysis and corrective action, and ran preventive maintenance across 30+ production tools, including source head replacements and rebuilds.</p>
         </article>
         <article>
+          <div class="timeline-mark" aria-hidden="true">BM</div>
           <span>May – Aug 2025</span>
           <h3>Burns &amp; McDonnell · Mechanical Engineering Intern, Brea</h3>
           <p>Designed commercial aviation fueling systems in the Aviation and Federal practice. Laid out fuel tank floors for three 44,000-barrel tanks in AutoCAD and Bluebeam, and designed a 15-gate hydrant fueling system for LAX Terminal 5, from isolation valve placement through flow calculations and P&amp;ID drawings.</p>
         </article>
         <article>
+          <div class="timeline-mark" aria-hidden="true">SP</div>
           <span>Sep 2024 – May 2025</span>
           <h3>MIT Space Propulsion Laboratory · Undergraduate Researcher</h3>
           <p>Designed and machined a rotating ionic liquid drying stand for vacuum operation up to 2000 rpm, and explored methods for producing 100 nm porous glass for ionic liquid uptake using thermal processing, acid leaching, and SEM imaging.</p>
         </article>
         <article>
+          <div class="timeline-mark" aria-hidden="true">MIT</div>
           <span>MIT coursework</span>
           <h3>Robotics, manufacturing, measurement, and propulsion</h3>
           <p>Competition robotics in 2.007, injection molding in 2.008, experimental measurement in 2.671, and electric propulsion hardware in 16.522.</p>
@@ -205,10 +239,26 @@
         <h2 id="capabilities-title">The toolkit behind the projects above.</h2>
       </div>
       <div class="capability-grid reveal">
-        <article><h3>Design</h3><p>CAD, mechanism design, design for manufacturing, tooling considerations.</p></article>
-        <article><h3>Build</h3><p>Machining, rapid prototyping, additive manufacturing, injection molding, assembly.</p></article>
-        <article><h3>Test</h3><p>Instrumentation, experimental design, data acquisition, validation, iteration.</p></article>
-        <article><h3>Compute</h3><p>Python, MATLAB, technical analysis, computer vision, statistical metrics.</p></article>
+        <article>
+          <span class="capability-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11a2 2 0 0 0-3-3L5 16l-1 4z"/></svg></span>
+          <h3>Design</h3>
+          <p>CAD, mechanism design, design for manufacturing, tooling considerations.</p>
+        </article>
+        <article>
+          <span class="capability-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6z"/></svg></span>
+          <h3>Build</h3>
+          <p>Machining, rapid prototyping, additive manufacturing, injection molding, assembly.</p>
+        </article>
+        <article>
+          <span class="capability-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 1 1 16 0"/><path d="M12 15l4-5"/><circle cx="12" cy="15" r="1"/></svg></span>
+          <h3>Test</h3>
+          <p>Instrumentation, experimental design, data acquisition, validation, iteration.</p>
+        </article>
+        <article>
+          <span class="capability-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M7 9l4 3-4 3"/><path d="M13 15h4"/></svg></span>
+          <h3>Compute</h3>
+          <p>Python, MATLAB, technical analysis, computer vision, statistical metrics.</p>
+        </article>
       </div>
     </section>
 
@@ -248,6 +298,23 @@
   </main>
 
   <footer class="site-footer">
+    <ul class="footer-icons" aria-label="Elsewhere">
+      <li>
+        <a href="https://www.linkedin.com/in/elijah-h-young/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.98 1.83-2 3.76-2 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.48-2.2 3v5.8h-4V9z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/elijahhyoung" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.9-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:ehyoung@mit.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </li>
+    </ul>
     <p>&copy; 2026 Elijah Young. Built for GitHub Pages with semantic HTML, CSS, and a small amount of JavaScript.</p>
   </footer>
 

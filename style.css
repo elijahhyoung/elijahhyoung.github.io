@@ -211,6 +211,27 @@ main {
   min-height: calc(100vh - 140px);
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 4px 12px;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 .eyebrow,
 .project-category,
 .meta-label {
@@ -265,6 +286,15 @@ h3 {
   color: var(--ink-soft);
   font-size: clamp(1.08rem, 2.2vw, 1.34rem);
   line-height: 1.48;
+}
+
+.hero-note {
+  max-width: 620px;
+  margin-top: 18px;
+  color: var(--steel-dark);
+  font-family: var(--mono);
+  font-size: 0.86rem;
+  line-height: 1.55;
 }
 
 .hero-actions,
@@ -399,6 +429,35 @@ h3 {
   color: var(--steel);
   font-size: 0.74rem;
   text-transform: uppercase;
+}
+
+.personality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.personality-card {
+  border: 1px solid var(--line-strong);
+  background: var(--paper-strong);
+  padding: 28px;
+}
+
+.personality-card h3 {
+  font-size: 1.35rem;
+}
+
+.personality-card ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+  margin: 18px 0 0;
+  color: var(--ink-soft);
+}
+
+.personality-card li + li {
+  margin-top: 0;
 }
 
 .section-kicker {
@@ -614,9 +673,24 @@ dd {
 
 .timeline article {
   display: grid;
-  grid-template-columns: 180px minmax(0, 0.8fr) minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 52px 150px minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
   padding: 24px;
+}
+
+.timeline-mark {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper-strong);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .timeline span {
@@ -636,6 +710,20 @@ dd {
 .capability-grid article {
   min-height: 180px;
   padding: 24px;
+}
+
+.capability-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  color: var(--mit-cardinal);
+}
+
+.capability-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .capability-grid h3 {
@@ -694,6 +782,36 @@ dd {
   color: var(--steel-dark);
   font-family: var(--mono);
   font-size: 0.78rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0 0 18px;
+  list-style: none;
+}
+
+.footer-icons a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.footer-icons a:hover,
+.footer-icons a:focus-visible {
+  border-color: var(--mit-cardinal);
+  color: var(--mit-cardinal);
+}
+
+.footer-icons svg {
+  width: 18px;
+  height: 18px;
 }
 
 .case-hero {
@@ -970,6 +1088,7 @@ dd {
   .section-kicker,
   .project-grid,
   .capability-grid,
+  .personality-grid,
   .media-grid {
     grid-template-columns: 1fr;
   }
