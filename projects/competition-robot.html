@@ -30,9 +30,9 @@
     <section class="case-hero">
       <a class="back-link" href="../index.html#work">Back to selected work</a>
       <p class="eyebrow">MIT 2.007 - Robotics</p>
-      <h1>Competition Robot</h1>
+      <h1>Nelly</h1>
       <div class="case-summary">
-        <p>Designed and fabricated a competition robot through mechanism design, machining, rapid prototyping, and iteration. The robot reached the final day of the MIT competition and outlasted approximately 85% of a field of more than 150 students.</p>
+        <p>A 2.007 competition robot, built for a "Wicked"-themed game table: a chain-driven base paired with a pantograph lift that extends up to reach a scoring target mounted behind an animated witch's face. Reached the final day of the MIT competition and outlasted approximately 85% of a field of more than 150 students.</p>
         <dl class="case-meta">
           <div><dt>Role</dt><dd>Mechanical design and fabrication</dd></div>
           <div><dt>Methods</dt><dd>CAD, machining, prototyping, testing</dd></div>
@@ -42,8 +42,11 @@
       </div>
     </section>
 
-    <figure class="case-media placeholder-media">
-      <p>Photos of the robot driving and scoring during competition are on the way. In the meantime, the breakdown below covers how it came together.</p>
+    <figure class="case-media">
+      <video controls preload="metadata" poster="../assets/projects/robot/match-video-poster.jpg">
+        <source src="../assets/projects/robot/match-video.mp4" type="video/mp4" />
+      </video>
+      <figcaption>Match footage: the pantograph lift extending toward the witch's-face target.</figcaption>
     </figure>
 
     <section class="case-study" aria-label="Competition robot case study">
@@ -59,13 +62,23 @@
           <li>There was no time to design in isolation. Every choice had to get tested and revised fast.</li>
         </ul>
       </article>
+      <div class="media-grid">
+        <figure>
+          <img src="../assets/projects/robot/robot-action-01.jpg" width="2200" height="1466" loading="lazy" alt="Elijah Young operating the competition robot at the driver station, with the chain-and-sprocket drivetrain visible in the foreground." />
+          <figcaption>At the driver station, robot drivetrain in the foreground.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/robot/robot-action-02.jpg" width="2200" height="1466" loading="lazy" alt="Close view of the robot's chain-and-sprocket drivetrain and pantograph lift mechanism on the game table." />
+          <figcaption>Chain-and-sprocket drivetrain and pantograph lift, on table.</figcaption>
+        </figure>
+      </div>
       <article class="case-panel">
         <h2>Design Approach</h2>
-        <p>Mostly a loop, repeated a lot of times: design a mechanism, cut it, bolt it on, see what breaks, fix that, run it again. Reliability mattered more than cleverness by the end.</p>
+        <p>Mostly a loop, repeated a lot of times: design a mechanism, cut it, bolt it on, see what breaks, fix that, run it again. Reliability mattered more than cleverness by the end. The final robot paired a simple chain-and-sprocket drivetrain with a pantograph (scissor-lift) arm that folds flat for most of the match and extends straight up to reach the scoring target when it counts.</p>
       </article>
       <article class="case-panel">
         <h2>Key Decisions</h2>
-        <p>I still owe this section the actual mechanism breakdown and scoring strategy. I have the notes, I just haven't written them up yet, so ask me directly if you want the details before I get to it.</p>
+        <p>The drivetrain is a straightforward chain-and-sprocket setup, chosen over belts or direct-drive for the torque and reliability under repeated hard contact. The scoring mechanism is a pantograph lift, a folding parallel-bar linkage, driven by two cables and ending in a two-pole reach that lines up with the target height on the table. I still owe this section the specific gear ratios and the scoring strategy behind that choice. Ask me directly if you want the details before I get to it.</p>
       </article>
       <article class="case-panel">
         <h2>Fabrication</h2>
@@ -73,12 +86,16 @@
       </article>
       <article class="case-panel">
         <h2>Testing</h2>
-        <p>The result below only happened because of a lot of repeated testing. I don't have match footage or test logs uploaded yet, so this section is thinner than it should be for now.</p>
+        <p>The result below only happened because of a lot of repeated testing. The video above is real match footage; I don't have test logs from the build phase uploaded yet.</p>
       </article>
       <article class="case-panel">
         <h2>Results</h2>
-        <p>Reached the final day of the MIT competition and outlasted approximately 85% of more than 150 competitors.</p>
+        <p>Reached the final day of the MIT competition and outlasted approximately 85% of more than 150 competitors. In one recorded match, Nelly beat the opposing robot 150 to 5.</p>
       </article>
+      <figure class="case-media case-media-poster">
+        <img src="../assets/projects/robot/final-score.png" width="1800" height="793" alt="Match scoreboard showing a final score of 150 for Elijah Young's robot Nelly versus 5 for the opposing robot." />
+        <figcaption>Scoreboard from that match.</figcaption>
+      </figure>
       <article class="case-panel">
         <h2>Improve Next</h2>
         <p>I want to write this from my actual build notes rather than guess at it after the fact, so it's still on my list. Check back, or ask and I'll tell you what I remember.</p>

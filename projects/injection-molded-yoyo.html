@@ -30,14 +30,14 @@
     <section class="case-hero">
       <a class="back-link" href="../index.html#work">Back to selected work</a>
       <p class="eyebrow">MIT 2.008 - Manufacturing</p>
-      <h1>Injection-Molded Yo-Yo</h1>
+      <h1>The Eye of Agamotto</h1>
       <div class="case-summary">
-        <p>A physical product and manufacturing project connecting product design, design for manufacturing, mold and tooling considerations, injection molding, process planning, and final product quality.</p>
+        <p>A Doctor Strange-themed injection-molded yo-yo, built with four teammates as "Masters of the Mystic Yo-Yos": Adelene Chan, Hector Lugaro, Kenneth Oranga, Nicole Lin, and me. The project connects product design, design for manufacturing, mold and tooling considerations, injection molding, process planning, and final product quality.</p>
         <dl class="case-meta">
-          <div><dt>Process</dt><dd>Injection molding</dd></div>
+          <div><dt>Process</dt><dd>Injection molding + thermoforming</dd></div>
           <div><dt>Focus</dt><dd>DFM and tooling</dd></div>
           <div><dt>Deliverable</dt><dd>Production-quality physical product</dd></div>
-          <div><dt>Link</dt><dd><a href="https://sites.google.com/view/2008teameye/home" target="_blank" rel="noopener noreferrer">Team Eye project site</a></dd></div>
+          <div><dt>Outputs</dt><dd><a href="../assets/projects/yoyo/2.008-final-poster.pdf" target="_blank" rel="noopener">Final poster</a> and <a href="https://sites.google.com/view/2008teameye/home" target="_blank" rel="noopener noreferrer">Team Eye site</a></dd></div>
         </dl>
       </div>
     </section>
@@ -50,7 +50,7 @@
     <section class="case-study" aria-label="Injection molded yo-yo case study">
       <article class="case-panel">
         <h2>Challenge</h2>
-        <p>Take a yo-yo from a product concept to an actual injection-molded part, where geometry, tooling, shrinkage, and finish all decide whether the final piece looks like the render or looks like a mistake.</p>
+        <p>Take a yo-yo from a product concept to an actual injection-molded part, where geometry, tooling, shrinkage, and finish all decide whether the final piece looks like the render or looks like a mistake. Our team's concept was the Eye of Agamotto, Doctor Strange's amulet: an oblong eye shape with smooth outer edges, fine engraved detail, overhanging "branch" features, and a green thermoformed centerpiece standing in for the Time Stone.</p>
       </article>
       <article class="case-panel">
         <h2>Constraints</h2>
@@ -58,11 +58,12 @@
           <li>Geometry had to work with injection molding and hold up through post-mold assembly.</li>
           <li>Tooling decisions had direct tradeoffs against manufacturability and finish quality.</li>
           <li>Process planning had to turn the design intent into a repeatable physical result, not a one-off.</li>
+          <li>Fine engraved detail was limited by the 1/16" end mill used on the ring molds, and by needing enough surface area for ejector pins.</li>
         </ul>
       </article>
       <article class="case-panel">
         <h2>Design Approach</h2>
-        <p>This was as much a DFM project as a product design one. The finished part and the shrinkage/manufacturing documentation below are what came out of iterating on both at the same time.</p>
+        <p>This was as much a DFM project as a product design one. The design went through three real iterations (9/17 initial, 10/12, and the 10/21 final) as manufacturing constraints pushed the geometry: channels got widened where fine detail collided with the end mill diameter and ejector-pin clearance, edges got smoothed and given a 2° draft angle so parts would release cleanly instead of sticking in the mold.</p>
       </article>
       <div class="media-grid">
         <figure>
@@ -76,15 +77,15 @@
       </div>
       <article class="case-panel">
         <h2>Key Decisions</h2>
-        <p>The material choice, mold strategy, and tolerance tradeoffs deserve their own writeup, and I haven't pulled that together from the team documentation yet. It's on the list.</p>
+        <p>Press fit design used a commonly accepted interference value of 0.015", with correct machined dimensions confirmed through shrinkage simulation before cutting metal. In practice, the measured diameters drifted from the intended specification limits (body: 2.02"-2.04"; ring: 1.99"-2.01"), but because both mating parts shrank by roughly the same amount, the mean interference still landed close to nominal, so the press fit worked anyway.</p>
       </article>
       <article class="case-panel">
         <h2>Fabrication</h2>
-        <p>The manufacturing spec and shrinkage analysis below are the real process artifacts from the build, not mockups.</p>
+        <p>Two processes: injection molding on an Arburg machine produced 50 top rings, 50 bottom rings, and 100 body parts from three aluminum molds; thermoforming (thermoformer, punch, and spray paint over an SLA-printed mold) produced 50 of the green "Time Stone" centerpieces. The manufacturing spec and shrinkage analysis below are the real process artifacts from the build, not mockups.</p>
       </article>
       <article class="case-panel">
         <h2>Testing and Iteration</h2>
-        <p>I still want to add the specific quality checks and defect observations that drove revisions between runs. Ask me and I can walk through it directly.</p>
+        <p>The ring molds were the hardest part to get right: the detailed channels caused tool breakage and rough surfaces that slowed material removal, and one groove was too narrow to machine at all, so we widened it. The bottom ring came out with an oversized press fit at first, fixed by rescaling for shrinkage. The body parts showed injection-molding burning until we dropped injection velocity to 0.5 m/s and pressure to 400 psi. The thermoformed piece was hard to center under the die-cutter, solved by adding a sharp "cliff" edge into the mold as an alignment reference.</p>
       </article>
       <article class="case-panel">
         <h2>Results</h2>
@@ -92,7 +93,7 @@
       </article>
       <article class="case-panel">
         <h2>Improve Next</h2>
-        <p>I'll add what changed for a second run once I've gone back through the team report.</p>
+        <p>The team's own lessons learned, and ones I'd carry into the next manufacturing project: account for machine downtime and know your real cycle times, treat iteration as the actual learning process rather than a detour from it, consider manufacturability and assembly from the very start of the design instead of retrofitting it later, and keep documentation thorough enough that anyone on the team can pick up where you left off.</p>
       </article>
       <article class="case-panel">
         <h2>Related Work</h2>

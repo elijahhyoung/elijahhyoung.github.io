@@ -30,14 +30,14 @@
     <section class="case-hero">
       <a class="back-link" href="../index.html#work">Back to selected work</a>
       <p class="eyebrow">MIT 16.522 - Electric Propulsion</p>
-      <h1>Ion Thruster and Test Stand</h1>
+      <h1>Large Area Cusped-Field Space Ramjet</h1>
       <div class="case-summary">
-        <p>Mechanical hardware and supporting test stand work for propulsion experiments, combining CAD, fabrication, assembly, instrumentation context, and plasma test evidence.</p>
+        <p>A 15-person team project designing, building, and testing an air-breathing electric propulsion (ABEP) thruster: a concept that collects ambient atmosphere in very low Earth orbit, ionizes it, and accelerates it out the back to counteract drag, instead of carrying propellant onboard. I worked on the CAD grid design and material selection, machining and deburring frame components, soldering the high-voltage wiring, running test configurations, degassing the vacuum chamber, and building a quick repair test stand between runs.</p>
         <dl class="case-meta">
           <div><dt>Domain</dt><dd>Electric propulsion</dd></div>
-          <div><dt>Role</dt><dd>Hardware and test engineering</dd></div>
-          <div><dt>Methods</dt><dd>Fabrication, instrumentation, experimental testing</dd></div>
-          <div><dt>Media</dt><dd>CAD, assembly images, plasma test video</dd></div>
+          <div><dt>My role</dt><dd>Grid design, fabrication, and testing</dd></div>
+          <div><dt>Team</dt><dd>15 members, MIT AeroAstro</dd></div>
+          <div><dt>Outputs</dt><dd><a href="../assets/projects/ion-thruster/16.522-final-presentation.pdf" target="_blank" rel="noopener">Final presentation</a></dd></div>
         </dl>
       </div>
     </section>
@@ -52,7 +52,7 @@
     <section class="case-study" aria-label="Ion thruster case study">
       <article class="case-panel">
         <h2>Challenge</h2>
-        <p>Build ion thruster hardware and a test setup where alignment and instrumentation actually matter, not just a CAD model that looks right and does nothing.</p>
+        <p>Satellites in very low Earth orbit lose altitude fast to atmospheric drag, and carrying enough propellant to fight that limits payload mass and mission life. The idea behind an air-breathing thruster is to skip the onboard propellant entirely: collect the thin atmosphere the satellite is already flying through, ionize it, and accelerate it out the back for thrust. Our job was to design, build, and test whether a large-area cusped-field magnetic design could actually do that, not just simulate it.</p>
       </article>
       <article class="case-panel">
         <h2>Constraints</h2>
@@ -60,6 +60,7 @@
           <li>The hardware had to actually run and produce measurable results, not just assemble cleanly.</li>
           <li>Mechanical assembly had to fit electrodes, mounting, and the test stand together with no room to fudge alignment.</li>
           <li>The whole point was getting plasma, so the test setup had to prove the device was operating, not just powered on.</li>
+          <li>15 people working on one thruster meant the mechanical design had to be modular enough for parallel work: magnets, grids, and mounting all had to assemble and adjust independently.</li>
         </ul>
       </article>
       <div class="media-grid">
@@ -82,23 +83,23 @@
       </div>
       <article class="case-panel">
         <h2>Design Approach</h2>
-        <p>The photos below trace the actual build: CAD, then assembled hardware, then the plasma test that proved it worked. I still want to add a clear writeup of the electrode layout and instrumentation stack to go with them.</p>
+        <p>The photos below trace the actual build: CAD, then assembled hardware, then the plasma test that proved it worked. The magnetic circuit uses 16 magnet pairs around the circumference plus one center pair, each pair held in a threaded tube with a Teflon sleeve for electrical isolation. The mounting design went through a "drop-in" iteration so the base and thruster could be positioned in the vacuum chamber one at a time, which maximized how large a thruster diameter we could fit. The grids sit on jackscrews for independent adjustment, up to about 2" of separation, so the electric field geometry could be tuned without rebuilding the assembly.</p>
       </article>
       <article class="case-panel">
         <h2>Key Decisions</h2>
-        <p>The materials, mounting strategy, and instrumentation choices are documented in my 16.522 report, and I haven't condensed that into a page-ready version yet. Ask if you want the specifics now.</p>
+        <p>My part of that design was the CAD grid design and material selection, plus assisting with machining and deburring the frame components. Mounting and grid iteration were shared work across the structures team; the fuller materials and instrumentation rationale is documented in the team's final presentation, linked above.</p>
       </article>
       <article class="case-panel">
         <h2>Fabrication</h2>
-        <p>Assembling and aligning the thruster hardware onto the test stand plate was most of the hands-on work here.</p>
+        <p>Machining and deburring frame components, soldering the high-voltage wiring, and assembling and aligning the thruster hardware onto the test stand plate. Between test runs I also built a quick repair test stand so the team could troubleshoot hardware issues without tying up the main vacuum chamber setup.</p>
       </article>
       <article class="case-panel">
         <h2>Testing</h2>
-        <p>The plasma photos and video below are the actual test evidence. Measured outputs and test conditions from the report still need to be added.</p>
+        <p>The plasma photos and video below are from first-plasma testing: 3.6 &micro;N of thrust, a specific impulse of about 10,600 s, and roughly 1% efficiency at that operating point. The team ran dozens of test configurations after that (different grounding and biasing setups, grid spacings, and vacuum conditions) chasing higher thrust and efficiency; I was involved in running those configurations and degassing the chamber between them, though the full comparison across configurations lives in the team report rather than here yet.</p>
       </article>
       <article class="case-panel">
         <h2>Improve Next</h2>
-        <p>A labeled test stand diagram and the measured test data would make this a much more complete validation story. Both are on my list to add.</p>
+        <p>The team's own next steps: fixes for bidirectional thrust measurement, a structural redesign for the next iteration, and scaling the design up by a factor of 20 for a more flight-realistic size. On this page specifically, I'd like to add a labeled test stand diagram and a cleaner summary of results across the different test configurations.</p>
       </article>
       <article class="case-panel">
         <h2>Related Work</h2>
