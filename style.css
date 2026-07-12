@@ -783,14 +783,6 @@ dd {
   line-height: 1.4;
 }
 
-.case-study p.case-footnote {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--line-strong);
-  color: var(--steel-dark);
-  font-size: 0.9rem;
-}
-
 .case-panel div > p + p,
 .case-panel div > ul,
 .case-panel div > ol {
