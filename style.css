@@ -725,6 +725,10 @@ dd {
   background: var(--paper-strong);
 }
 
+.case-panel + .case-media {
+  margin-top: 28px;
+}
+
 .case-media img,
 .case-media video {
   width: 100%;
