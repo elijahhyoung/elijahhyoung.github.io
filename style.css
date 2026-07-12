@@ -716,6 +716,7 @@ dd {
 .case-media img,
 .case-media video {
   width: 100%;
+  height: auto;
   max-height: 720px;
   object-fit: cover;
 }
@@ -791,6 +792,7 @@ dd {
 
 .media-grid img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }

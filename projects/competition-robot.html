@@ -32,12 +32,12 @@
       <p class="eyebrow">MIT 2.007 - Robotics</p>
       <h1>Nelly</h1>
       <div class="case-summary">
-        <p>A 2.007 competition robot, built for a "Wicked"-themed game table: a chain-driven base paired with a pantograph lift that extends up to reach a scoring target mounted behind an animated witch's face. Reached the final day of the MIT competition and outlasted approximately 85% of a field of more than 150 students.</p>
+        <p>A 2.007 competition robot built for a "Wicked"-themed game table: two-wheel rear drive on a pair of speed motors, a 5-stage linear slide that telescopes from 15.5" up to over 57" to retrieve a broom hanging above the table, and a separate actuated claw on the base that grasps the broom and holds it while I drive it onto my side of the board.</p>
         <dl class="case-meta">
           <div><dt>Role</dt><dd>Mechanical design and fabrication</dd></div>
+          <div><dt>Outcome</dt><dd>16th of the night, into the final day</dd></div>
+          <div><dt>Size / weight</dt><dd>12"x12"x16", 4 lb 2 oz</dd></div>
           <div><dt>Methods</dt><dd>CAD, machining, prototyping, testing</dd></div>
-          <div><dt>Outcome</dt><dd>Final competition day</dd></div>
-          <div><dt>Field</dt><dd>150+ competitors</dd></div>
         </dl>
       </div>
     </section>
@@ -46,7 +46,7 @@
       <video controls preload="metadata" poster="../assets/projects/robot/match-video-poster.jpg">
         <source src="../assets/projects/robot/match-video.mp4" type="video/mp4" />
       </video>
-      <figcaption>Match footage: the pantograph lift extending toward the witch's-face target.</figcaption>
+      <figcaption>Match footage: the linear slide extending to reach the broom.</figcaption>
     </figure>
 
     <section class="case-study" aria-label="Competition robot case study">
@@ -64,21 +64,21 @@
       </article>
       <div class="media-grid">
         <figure>
-          <img src="../assets/projects/robot/robot-action-01.jpg" width="2200" height="1466" loading="lazy" alt="Elijah Young operating the competition robot at the driver station, with the chain-and-sprocket drivetrain visible in the foreground." />
-          <figcaption>At the driver station, robot drivetrain in the foreground.</figcaption>
+          <img src="../assets/projects/robot/robot-action-01.jpg" width="2200" height="1466" loading="lazy" alt="Elijah Young operating the competition robot from the driver station, with the linear slide's pulley system visible in the foreground." />
+          <figcaption>At the driver station.</figcaption>
         </figure>
         <figure>
-          <img src="../assets/projects/robot/robot-action-02.jpg" width="2200" height="1466" loading="lazy" alt="Close view of the robot's chain-and-sprocket drivetrain and pantograph lift mechanism on the game table." />
-          <figcaption>Chain-and-sprocket drivetrain and pantograph lift, on table.</figcaption>
+          <img src="../assets/projects/robot/robot-action-02.jpg" width="2200" height="1466" loading="lazy" alt="Close view of the robot's linear slide and pulley system on the game table, next to the hot air balloon prop." />
+          <figcaption>The linear slide's pulley system, on the table.</figcaption>
         </figure>
       </div>
       <article class="case-panel">
         <h2>Design Approach</h2>
-        <p>Mostly a loop, repeated a lot of times: design a mechanism, cut it, bolt it on, see what breaks, fix that, run it again. Reliability mattered more than cleverness by the end. The final robot paired a simple chain-and-sprocket drivetrain with a pantograph (scissor-lift) arm that folds flat for most of the match and extends straight up to reach the scoring target when it counts.</p>
+        <p>Mostly a loop, repeated a lot of times: design a mechanism, cut it, bolt it on, see what breaks, fix that, run it again. Reliability mattered more than cleverness by the end. The final robot kept the drivetrain deliberately simple, two wheels, rear drive, so the more complicated part of the design, the reach mechanism, had a stable base to work from.</p>
       </article>
       <article class="case-panel">
         <h2>Key Decisions</h2>
-        <p>The drivetrain is a straightforward chain-and-sprocket setup, chosen over belts or direct-drive for the torque and reliability under repeated hard contact. The scoring mechanism is a pantograph lift, a folding parallel-bar linkage, driven by two cables and ending in a two-pole reach that lines up with the target height on the table. I still owe this section the specific gear ratios and the scoring strategy behind that choice. Ask me directly if you want the details before I get to it.</p>
+        <p>Drive is two-wheel rear drive on a pair of 25-3 speed motors. Scoring uses two separate mechanisms on the base: a 5-stage linear slide on a pulley system, powered by a single 25-2 torque motor, that telescopes from a stowed 15.5" up to over 57" to retrieve the broom, and a separate actuated claw that then grasps the broom once it's back within reach. I still owe this section the gear ratios and the rest of the scoring strategy. Ask me directly if you want the details before I get to it.</p>
       </article>
       <article class="case-panel">
         <h2>Fabrication</h2>
@@ -90,11 +90,14 @@
       </article>
       <article class="case-panel">
         <h2>Results</h2>
-        <p>Reached the final day of the MIT competition and outlasted approximately 85% of more than 150 competitors. In one recorded match, Nelly beat the opposing robot 150 to 5.</p>
+        <div>
+          <p class="case-callout">Placed 16th out of the field competing that night, advancing to the final day of the MIT 2.007 competition.</p>
+          <p>Scored 150 points in the seeding round. In my first round of head-to-head competition, Monday night, I won 150 points to 5 after successfully securing the broom, shown on the scoreboard below.</p>
+        </div>
       </article>
       <figure class="case-media case-media-poster">
         <img src="../assets/projects/robot/final-score.png" width="1800" height="793" alt="Match scoreboard showing a final score of 150 for Elijah Young's robot Nelly versus 5 for the opposing robot." />
-        <figcaption>Scoreboard from that match.</figcaption>
+        <figcaption>Scoreboard from that first-round match.</figcaption>
       </figure>
       <article class="case-panel">
         <h2>Improve Next</h2>
