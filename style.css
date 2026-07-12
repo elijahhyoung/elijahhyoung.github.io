@@ -242,27 +242,6 @@ main {
   font-size: 0.68rem;
 }
 
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 10px;
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  padding: 4px 12px;
-  color: var(--ink-soft);
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
 .eyebrow,
 .project-category,
 .meta-label {
@@ -446,48 +425,51 @@ h3 {
   border-top: 1px solid var(--line-strong);
 }
 
-.featured-work,
-.project-grid {
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
   margin-top: 42px;
 }
 
-.featured-work {
-  display: grid;
-  gap: 28px;
-}
-
-.project-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+.work-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--ink);
   background: var(--paper-strong);
+  color: inherit;
+  text-decoration: none;
 }
 
-.project-feature-inverted {
-  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
-}
-
-.project-feature-inverted .project-media {
-  order: 2;
-}
-
-.project-media {
-  min-height: 360px;
-  border-right: 1px solid var(--ink);
+.work-card-media {
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid var(--ink);
   background: var(--ink);
   overflow: hidden;
 }
 
-.project-feature-inverted .project-media {
-  border-right: 0;
-  border-left: 1px solid var(--ink);
-}
-
-.project-media img,
-.project-media video {
+.work-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 400ms ease;
+}
+
+.work-card:hover .work-card-media img,
+.work-card:focus-visible .work-card-media img {
+  transform: scale(1.05);
+}
+
+.work-card-body {
+  padding: 22px 24px 26px;
+}
+
+.work-card-body h3 {
+  font-size: 1.5rem;
+}
+
+.work-card-body .project-category {
+  margin: 10px 0 0;
 }
 
 .placeholder-media {
@@ -502,44 +484,22 @@ h3 {
   text-align: center;
 }
 
+.work-card-media.placeholder-media {
+  min-height: 0;
+  padding: 20px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
 .placeholder-media code {
   white-space: normal;
 }
 
-.project-body {
-  padding: clamp(24px, 5vw, 48px);
-}
-
-.project-hook,
-.project-card p,
 .timeline p,
 .case-study p,
 .not-found p {
   color: var(--ink-soft);
-}
-
-.project-hook {
-  margin-top: 18px;
-  font-size: 1.08rem;
-}
-
-.project-facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  margin: 28px 0;
-  background: var(--line);
-}
-
-.project-facts div {
-  min-height: 88px;
-  padding: 14px;
-  background: var(--paper-strong);
-}
-
-.project-facts.compact {
-  grid-template-columns: 1fr;
-  margin-bottom: 22px;
 }
 
 dt {
@@ -574,13 +534,6 @@ dd {
   color: var(--mit-red);
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.project-card,
 .timeline article,
 .contact-panel,
 .case-panel,
@@ -589,38 +542,8 @@ dd {
   background: var(--paper-strong);
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  padding: 22px;
-}
-
-.project-card h3 {
-  margin-bottom: 14px;
-}
-
-.project-card .text-link {
-  margin-top: auto;
-}
-
-.card-media {
-  display: grid;
-  place-items: center;
-  min-height: 220px;
-  margin: -22px -22px 22px;
-  border-bottom: 1px solid var(--line-strong);
-  background: var(--ink);
-  overflow: hidden;
-}
-
-.card-media img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
 .card-media-document {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--line-strong);
@@ -899,24 +822,12 @@ dd {
 
 @media (max-width: 960px) {
   .hero-grid,
-  .project-feature,
-  .project-feature-inverted,
   .case-summary {
     grid-template-columns: 1fr;
   }
 
   .hero-grid {
     min-height: auto;
-  }
-
-  .project-feature-inverted .project-media {
-    order: 0;
-    border-left: 0;
-  }
-
-  .project-media {
-    border-right: 0;
-    border-bottom: 1px solid var(--ink);
   }
 
   .timeline article {
@@ -995,16 +906,11 @@ dd {
   }
 
   .section-kicker,
-  .project-grid,
+  .work-grid,
   .media-grid {
     grid-template-columns: 1fr;
   }
 
-  .project-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .project-media,
   .placeholder-media {
     min-height: 280px;
   }
