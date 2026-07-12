@@ -37,13 +37,20 @@
           <div><dt>Question</dt><dd>How quickly do shuffle methods randomize a deck?</dd></div>
           <div><dt>Methods</dt><dd>ArUco markers, computer vision, statistics</dd></div>
           <div><dt>Trials</dt><dd>210</dd></div>
-          <div><dt>Outputs</dt><dd><a href="../assets/projects/card-shuffling/young-final-paper.pdf" target="_blank" rel="noopener">Paper</a> and <a href="../assets/projects/card-shuffling/young-final-poster.pptx">poster deck</a></dd></div>
+          <div><dt>Outputs</dt><dd><a href="../assets/projects/card-shuffling/young-final-paper.pdf" target="_blank" rel="noopener">Paper</a> and <a href="../assets/projects/card-shuffling/2.671_Young_E_FinalPoster.pdf" target="_blank" rel="noopener">poster</a></dd></div>
         </dl>
+      </div>
+      <div class="case-actions">
+        <a class="button button-primary" href="../assets/projects/card-shuffling/young-final-paper.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a>
+        <a class="button button-secondary" href="../assets/projects/card-shuffling/2.671_Young_E_FinalPoster.pdf" target="_blank" rel="noopener">View full poster (PDF)</a>
       </div>
     </section>
 
-    <figure class="case-media placeholder-media">
-      <p>A photo of the overhead camera and ArUco marker setup is still on my list to add. The results below came out of that rig.</p>
+    <figure class="case-media case-media-poster">
+      <a href="../assets/projects/card-shuffling/2.671_Young_E_FinalPoster.pdf" target="_blank" rel="noopener">
+        <img src="../assets/projects/card-shuffling/poster.jpg" width="2200" height="1885" alt="Full research poster titled From Order to Chaos, covering the card shuffling randomness study." />
+      </a>
+      <figcaption>Full poster from MIT 2.671 — click to open the PDF for a closer look.</figcaption>
     </figure>
 
     <section class="case-study" aria-label="Card shuffling case study">
@@ -73,7 +80,10 @@
       </article>
       <article class="case-panel">
         <h2>Results</h2>
-        <p>Riffle and machine shuffles both closed in on the theoretical baseline fast, with Adjacent-Pair Survival randomization rates of 1.49 and 1.56 per shuffle. Overhand shuffling was the clear laggard at 0.55 per shuffle. Global TV decay told the same story: 0.53 for riffle, 0.40 for machine, 0.23 for overhand.</p>
+        <div>
+          <p class="case-callout">Human riffle edges out machine shuffling; both are miles ahead of overhand. Riffle at least four times for a fair shuffle.</p>
+          <p>Riffle and machine shuffles were comparable, with human riffles mixing slightly faster (Adjacent-Pair Survival rate of 1.49, Total Variation decay of 0.53) than the machine (APS rate of 1.56, TV decay of 0.40). Overhand shuffling was dramatically slower on both metrics (APS rate of 0.55, TV decay of 0.23), confirming it's a poor way to actually randomize a deck. Both riffle and machine shuffling reach full randomness in around seven shuffles; overhand still isn't there after seven.</p>
+        </div>
       </article>
       <article class="case-panel">
         <h2>Conclusion</h2>
@@ -81,7 +91,7 @@
       </article>
       <article class="case-panel">
         <h2>Improve Next</h2>
-        <p>I still want to pull the actual plots from the paper and poster into this page instead of just summarizing them, along with a note on lighting and calibration issues that came up during CV setup.</p>
+        <p>The full poster above has the positional histograms and fit curves in more detail. Next, I'd like to add a note on lighting and calibration issues that came up during CV setup, and a photo of the overhead camera rig itself.</p>
       </article>
       <article class="case-panel">
         <h2>Related Work</h2>
