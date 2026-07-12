@@ -732,26 +732,6 @@ dd {
   cursor: pointer;
 }
 
-.case-media-portrait {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px 0 0;
-}
-
-.case-media-portrait img {
-  width: auto;
-  height: auto;
-  max-width: 480px;
-  max-height: 640px;
-  object-fit: contain;
-}
-
-.case-media-portrait figcaption {
-  width: 100%;
-  margin-top: 32px;
-}
-
 .case-media figcaption,
 .media-grid figcaption {
   padding: 10px 12px;
