@@ -2,29 +2,6 @@
 
 Static GitHub Pages portfolio for Elijah Young, MIT mechanical engineering.
 
-## Local Preview
-
-No build step is required. From the repository root, run one of:
-
-```powershell
-py -m http.server 8000
-```
-
-or:
-
-```powershell
-node tools/static-server.mjs
-```
-
-or:
-
-```powershell
-npx serve .
-```
-
-Then open `http://localhost:8000` for Python, or `http://127.0.0.1:8787` for the Node helper.
-
-Opening `index.html` directly also works for most content, but a local server is better for checking GitHub Pages-style paths.
 
 ## Structure
 
