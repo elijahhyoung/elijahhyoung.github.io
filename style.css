@@ -464,12 +464,6 @@ h3 {
   object-fit: contain;
   padding: 32px;
   box-sizing: border-box;
-  transition: none;
-}
-
-.work-card:hover .work-card-media img.contain-fit,
-.work-card:focus-visible .work-card-media img.contain-fit {
-  transform: none;
 }
 
 .work-card:hover .work-card-media img,
