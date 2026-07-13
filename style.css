@@ -820,8 +820,7 @@ dd {
 
 .media-grid--compact img {
   aspect-ratio: 1 / 1;
-  object-fit: contain;
-  background: var(--paper-strong);
+  object-fit: cover;
 }
 
 .back-link {
