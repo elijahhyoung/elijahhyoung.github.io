@@ -614,10 +614,25 @@ dd {
 }
 
 .contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 32px;
+  align-items: center;
   padding: clamp(28px, 6vw, 56px);
   background:
     linear-gradient(135deg, rgba(117, 0, 20, 0.08), transparent 36%),
     var(--paper-strong);
+}
+
+.contact-flowchart {
+  margin: 0;
+  border: 1px solid var(--line-strong);
+}
+
+.contact-flowchart img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .copy-status {
@@ -963,7 +978,8 @@ dd {
 
   .section-kicker,
   .work-grid,
-  .media-grid {
+  .media-grid,
+  .contact-panel {
     grid-template-columns: 1fr;
   }
 
