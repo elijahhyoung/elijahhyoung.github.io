@@ -460,10 +460,6 @@ h3 {
   transition: transform 400ms ease;
 }
 
-.work-card-media img.poster-cover {
-  object-position: center top;
-}
-
 .work-card-media img.contain-fit {
   object-fit: contain;
   padding: 32px;
