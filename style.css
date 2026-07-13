@@ -562,7 +562,7 @@ dd {
 
 .timeline article {
   display: grid;
-  grid-template-columns: 140px 150px minmax(0, 0.8fr) minmax(0, 1fr);
+  grid-template-columns: 180px 150px minmax(0, 0.8fr) minmax(0, 1fr);
   gap: 20px;
   align-items: start;
   padding: 24px;
