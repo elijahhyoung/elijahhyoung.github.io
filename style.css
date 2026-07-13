@@ -571,10 +571,8 @@ dd {
 .timeline-logo {
   display: flex;
   align-items: center;
-  height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--line-strong);
-  background: var(--paper-strong);
+  justify-content: center;
+  height: 72px;
 }
 
 .timeline-logo img {
